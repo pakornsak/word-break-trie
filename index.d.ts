@@ -2,7 +2,7 @@ interface HasWordFunction {
     (s:string) : boolean;
 }
 
-declare function wordBreak(
+declare function wordBreakTrie(
     s: string,
     dict: HasWordFunction,
     longestWordLength?: number
