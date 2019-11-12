@@ -1,4 +1,4 @@
-function wordBreakTrie(s, hasWord, longestWordLength) {
+function wordBreak(s, hasWord, longestWordLength) {
     const size = s.length;
     if (size === 0) return [];
   
@@ -10,7 +10,7 @@ function wordBreakTrie(s, hasWord, longestWordLength) {
         const ret = [word];
   
         const end = i === s.length;
-        const words = !end ? wordBreakTrie(s.substring(i), hasWord, max) : [];
+        const words = !end ? wordBreak(s.substring(i), hasWord, max) : [];
         ret.push(...words);
         return ret;
       }
@@ -18,5 +18,5 @@ function wordBreakTrie(s, hasWord, longestWordLength) {
     return [s];
   }
   
-  module.exports = wordBreakTrie;
+  module.exports = wordBreak;
   

@@ -5,13 +5,13 @@ word-break util using a trie dictionary
 ## TypeScript
 
 ```ts
-import wordBreakTrie from "word-break-trie";
+import wordBreak from "word-break-trie";
 import trie from "trie-prefix-tree";
 
-test("wordBreakTrie", () => {
+test("wordBreak", () => {
   const input = "ilikesamsung";
   const dict = trie(["samsung", "like", "i"]);
-  const list = wordBreakTrie(input, dict.hasWord);
+  const list = wordBreak(input, dict.hasWord);
   expect(list.join("|")).toBe("i|like|samsung");
 });
 ```

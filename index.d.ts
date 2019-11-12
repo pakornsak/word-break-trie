@@ -2,12 +2,12 @@ interface HasWordFunction {
     (s:string) : boolean;
 }
 
-declare function wordBreakTrie(
+declare function wordBreak(
     s: string,
     dict: HasWordFunction,
     longestWordLength?: number
 ): string[];
-declare namespace wordBreakTrie {}
+declare namespace wordBreak {}
 
-export = wordBreakTrie;
+export = wordBreak;
   
