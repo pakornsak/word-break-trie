@@ -1,0 +1,30 @@
+{
+  "name": "word-break-trie",
+  "version": "1.0.0",
+  "description": "word-break util using trie-search dictionary",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakornsak/word-break-trie.git"
+  },
+  "keywords": [
+    "word-break",
+    "trie",
+    "trie-search",
+    "word-break-problem"
+  ],
+  "author": "Pakornsak Supamongkonchaikul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pakornsak/word-break-trie/issues"
+  },
+  "homepage": "https://github.com/pakornsak/word-break-trie#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "trie-prefix-tree": "^1.5.1"
+  }
+}
